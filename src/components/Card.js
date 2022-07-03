@@ -118,8 +118,7 @@ const Card = ({movie}) => {
             ( <div className='btn' onClick={()=>{addStorage()}}>
             Add to favorites</div> )
             :(<div className='btn' 
-            onClick={()=>{deleteStorage();
-            window.location.reload();}}>Remove from favorites</div>)
+            onClick={()=>{deleteStorage();}}>Remove from favorites</div>)
            }
         </div>
     );
