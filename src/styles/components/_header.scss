@@ -1,0 +1,51 @@
+.header {
+  margin-top: 1.3em;
+  nav {
+
+    h1 {
+      
+      color: $white;
+      padding-right: 20px;
+      padding: 4px;
+      padding-left: 20px;
+      font-weight: bolder;
+      font-size: 35px;
+    }
+
+    ul {
+      display: flex;
+      background-color: $black;
+   
+      a {
+        position: relative;
+        text-decoration: none;
+        color: $white;
+        border-radius: 60px;
+        width: auto;
+        text-align: center;
+        margin-left: 30px;
+        padding: 3px ;
+        font-size: 35px;
+    
+
+        &:visited {
+          text-decoration: underline;
+          color: $white;
+
+        }
+        &:hover {
+          text-decoration: underline;
+        
+        }
+      }
+      a.nav-active {
+        text-decoration: underline;
+        background: $color-2;
+
+        &:hover {
+          background: $black;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.form-container {
+  display: inline-flex;
+
+  form {
+    
+    input[type="text"] {
+      padding: 1px;;
+      margin: 20px;
+      margin-bottom: 0px;
+      border-radius: 20px;
+      border: none;
+      font-size: 1.4rem;
+      display: block;
+      width: 180px;
+      outline: none;
+      background-color: $color-2;
+      color: $white;
+      padding-left: 10px;
+    }
+    ::placeholder{
+      color:$black;
+    }
+
+  }
+  .btn-sort-container{
+    background-color: $color-1;
+    border-radius: 50px;
+    margin-top: 20px;
+
+
+    #goodToBad{
+      border-right: 2px solid;
+    }
+    #goodToBad,
+    #badToGood {
+      display: inline-flex;
+      width: 60px;
+      padding: 6px;
+      transition: 0.3s;
+      position: relative;
+     cursor: pointer;
+
+     &:hover {
+      background: $black;
+    }
+
+    }
+    #goodToBad span {
+      transform: translateY(-50%) rotate(-90deg);
+      right: 2px;
+    
+    }
+    #badToGood span {
+      transform: translateY(-50%) rotate(90deg);
+      left: 30px;
+      
+    }
+    #goodToBad span,
+    #badToGood span {
+      position: absolute;
+      top: 60%;
+
+    }
+  }
+}
