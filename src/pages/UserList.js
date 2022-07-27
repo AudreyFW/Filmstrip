@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import axios from 'axios';
 import Card from '../components/Card'
+import Footer from '../components/Footer';
 
 
 const UserList = () => {
@@ -31,6 +32,7 @@ const UserList = () => {
                 : (<h2>No favorites for the moment</h2>)
             }
             </div>
+            <Footer />
         </div>
     );
 };

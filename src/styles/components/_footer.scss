@@ -1,0 +1,27 @@
+.signature {
+  background-color: $color-1;
+  position: absolute;
+  padding-top: 1em;
+  width: 100%;
+  height: 100px;
+  box-shadow: 1px 1px;
+
+  p {
+    width: 7em;
+    font-size: 1.4em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    a {
+      font-style: italic;
+      color: $color-2;
+      margin-top: 0;
+      cursor: pointer;
+
+      &:hover {
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
